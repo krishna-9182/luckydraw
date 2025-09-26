@@ -1,0 +1,9 @@
+.membercard{
+    padding: 20px; 
+    border: 1px solid red; 
+    background-color: aqua;
+}  
+.cityname{
+    color: blue; 
+    font-weight: bold;
+}

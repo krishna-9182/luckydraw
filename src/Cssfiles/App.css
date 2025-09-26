@@ -1,0 +1,16 @@
+.title{
+  background-color: red;
+  text-align: center;  
+  margin-top: 0%;
+}
+
+.memberscontainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  border: 1px solid black;
+  height: 500px; 
+  padding: 10px; 
+  
+}
+
