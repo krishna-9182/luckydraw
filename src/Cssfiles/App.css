@@ -1,7 +1,9 @@
-.title{
+.title {
   background-color: red;
-  text-align: center;  
-  margin-top: 0%;
+  text-align: center;
+  margin-top: 0;
+  padding: 1vw;
+  font-size: 2vw;
 }
 
 .memberscontainer {
@@ -9,8 +11,32 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   border: 1px solid black;
-  height: 500px; 
-  padding: 10px; 
-  
+  height: 500px;
+  padding: 10px;
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 4vw;
+    padding: 2vw;
+  }
+  .memberscontainer {
+    grid-template-columns: repeat(2, 1fr); /* fewer columns on small screens */
+    height: auto; /* allow height to adjust */
+    gap: 8px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 5vw;
+    padding: 3vw;
+  }
+  .memberscontainer {
+    grid-template-columns: 1fr; /* single column for very small screens */
+    gap: 5px;
+    padding: 3px;
+  }
+}

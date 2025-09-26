@@ -1,13 +1,36 @@
-.howtoplay{
-    width: 900px;
-    display: inline-block;
-} 
+.howtoplay {
+  width: 90%;        /* use relative width instead of fixed 900px */
+  max-width: 900px;  /* optional max width */
+  display: inline-block;
+  margin: 0 auto;    /* center horizontally */
+}
 
-  img {
-    width: 400px;   /* increase this value as needed */
-    height: auto;   /* keeps aspect ratio */
-    border: 1px solid #ddd;
-    border-radius: 8px; 
-    margin-left: 140px;
+img {
+  width: 80%;        /* responsive width */
+  max-width: 400px;  /* optional max width */
+  height: auto;      /* maintain aspect ratio */
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  display: block;
+  margin: 0 auto;    /* center image */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .howtoplay {
+    width: 95%;
   }
+  img {
+    width: 90%;
+    margin-left: 0;
+  }
+}
 
+@media (max-width: 480px) {
+  .howtoplay {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}

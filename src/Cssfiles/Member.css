@@ -1,9 +1,32 @@
-.membercard{
-    padding: 20px; 
-    border: 1px solid red; 
-    background-color: aqua;
-}  
-.cityname{
-    color: blue; 
-    font-weight: bold;
+.membercard {
+  padding: 2vw;            /* responsive padding instead of fixed 20px */
+  border: 1px solid red;
+  background-color: aqua;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cityname {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.2em;       /* relative font size */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .membercard {
+    padding: 3vw;
+  }
+  .cityname {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .membercard {
+    padding: 4vw;
+  }
+  .cityname {
+    font-size: 1em;
+  }
 }
